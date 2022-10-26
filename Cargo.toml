@@ -1,0 +1,20 @@
+[package]
+name = "tapret-tests"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bitcoin = { version = "0.28.1", features = ["rand", "std"]}
+secp256k1 = { version = "0.22.1", features = ["global-context", "rand-std"] }
+bitcoin_hashes = { version = "0.10.0", default-features = false }
+bp-core = { version = "0.8.0", features = ["psbt"] }
+commit_verify = "0.8.0"
+bitcoin_scripts = "0.8.0"
+
+[features]
+default = []
+all=[]
+
+[workspace]
